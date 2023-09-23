@@ -11,8 +11,8 @@ class Dependencies {
 	private object $plugin_filters;
 	
 	function __construct(
-		Admin_Loader $admin_loader,
-		Public_Loader $public_loader,
+		Admin_Assets $admin_loader,
+		Public_Assets $public_loader,
 		Plugin_Activator $plugin_activator,
 		Plugin_Deactivator $plugin_deactivator,
 		Plugin_Translator $plugin_translator,

@@ -1,7 +1,7 @@
 <?php
 
 namespace TSBF\Classes;
-class Admin_Loader {
+class Admin_Assets {
 	private string $plugin_prefix;
 	private string $plugin_version;
 	

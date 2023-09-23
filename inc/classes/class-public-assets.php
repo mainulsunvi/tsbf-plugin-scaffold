@@ -2,7 +2,7 @@
 
 namespace TSBF\Classes;
 
-class Public_Loader {
+class Public_Assets {
 	private string $plugin_prefix;
 	private string $plugin_version;
 	
