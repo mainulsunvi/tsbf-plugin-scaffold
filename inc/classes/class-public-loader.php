@@ -16,7 +16,7 @@ class Public_Loader {
 	}
 	
 	function public_assets(): void {
-		wp_enqueue_style($this->plugin_prefix. '-public-main', TSBF_ROOT_URL . 'assets/public/css/public-main.css', null, $this->plugin_version);
+		wp_enqueue_style($this->plugin_prefix. '-public-main', TSBF_ROOT_URL . 'assets/public/css/public.min.css', null, $this->plugin_version);
 		
 		wp_enqueue_script($this->plugin_prefix. '-public-script', TSBF_ROOT_URL . 'assets/public/js/public.script.min.js', array('jquery'), $this->plugin_version, true);
 	}

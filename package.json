@@ -5,11 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:public": "vite build --config vite.config.public.js",
-    "build:admin": "vite build --config vite.config.admin.js",
+    "build:public": "vite build --config app/config/js/vite.config.public.js",
+    "build:admin": "vite build --config app/config/js/vite.config.admin.js",
+
+    "build:public_scss": "vite build --config app/config/scss/vite.config.public.js",
+    "build:admin_scss": "vite build --config app/config/scss/vite.config.admin.js",
     
-    "watch:public": "vite build --watch --config vite.config.public.js",
-    "watch:admin": "vite build --watch --config vite.config.admin.js",
+    "watch:public": "vite build --watch --config app/config/js/vite.config.public.js",
+    "watch:admin": "vite build --watch --config app/config/js/vite.config.admin.js",
+
+    "watch:public_scss": "vite build --watch --config app/config/scss/vite.config.public.js",
+    "watch:admin_scss": "vite build --watch --config app/config/scss/vite.config.admin.js",
 
     "watch:sass_admin_compressed": "sass --watch app/assets/scss/admin/main.scss:assets/admin/css/admin.min.css --style compressed",
     "watch:sass_public_compressed": "sass --watch app/assets/scss/public/main.scss:assets/public/css/public.min.css --style compressed",
