@@ -17,6 +17,6 @@ class Admin_Loader {
 	function admin_assets(): void {
 		wp_enqueue_style( $this -> plugin_prefix . '-admin', TSBF_ROOT_URL . 'assets/admin/css/admin-main.css', null, $this -> plugin_version );
 		
-		wp_enqueue_script( $this -> plugin_prefix . '-admin-script', TSBF_ROOT_URL . 'assets/admin/js/admin-script.js', array( 'jquery' ), $this -> plugin_version, true );
+		wp_enqueue_script( $this -> plugin_prefix . '-admin-script', TSBF_ROOT_URL . 'assets/admin/js/admin.script.min.js', array( 'jquery' ), $this -> plugin_version, true );
 	}
 }

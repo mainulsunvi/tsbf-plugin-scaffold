@@ -1,0 +1,27 @@
+{
+  "name": "tsbf",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:public": "vite build --config vite.config.public.js",
+    "build:admin": "vite build --config vite.config.admin.js",
+    
+    "watch:public": "vite build --watch --config vite.config.public.js",
+    "watch:admin": "vite build --watch --config vite.config.admin.js",
+
+    "watch:sass_admin_compressed": "sass --watch app/assets/scss/admin/main.scss:assets/admin/css/admin.min.css --style compressed",
+    "watch:sass_public_compressed": "sass --watch app/assets/scss/public/main.scss:assets/public/css/public.min.css --style compressed",
+
+    "watch:sass_public": "sass --watch app/assets/scss/public/main.scss:assets/public/css/public-main.css",
+    "watch:sass_admin": "sass --watch app/assets/scss/admin/main.scss:assets/admin/css/admin-main.css",
+
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.68.0",
+    "vite": "^4.4.5",
+    "vite-plugin-minify": "^1.5.2"
+  }
+}
